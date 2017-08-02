@@ -5,8 +5,11 @@ package com.company;
  */
 public class ConcreteListItem extends ListItem {
 
+    private int currentElement;
+
     public ConcreteListItem(Double element) {
         super(element);
+        currentElement = 0;
     }
 
     public ConcreteListItem(Double element, ListItem next) {
@@ -37,5 +40,11 @@ public class ConcreteListItem extends ListItem {
 
     }
 
+    public int getCurrentElement() {
+        return currentElement;
+    }
 
+    public void setCurrentElement(int currentElement) {
+        this.currentElement = currentElement;
+    }
 }

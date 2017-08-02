@@ -66,12 +66,5 @@ public abstract class ListItem {
         return 1;
     }
 
-    @Override
-    public String toString() {
-        return "ListItem{" +
-                "element=" + element.toString() +
-                ", next=" + next.element.toString() +
-                ", previous=" + previous.toString() +
-                '}';
-    }
+
 }
